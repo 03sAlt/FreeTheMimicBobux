@@ -1,0 +1,23 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Fuck", "Synapse")
+
+local Tab = Window:NewTab("a")
+local Section = Tab:NewSection("ez")
+Section:NewButton("Text", "Stfu", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Book-2/main/README.md'))()
+    print("Next day")
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credit HLL#5199")
+Section:NewButton("Copy Discord", "Credits", function()
+    setclipboard("https://discord.gg/urs2cRBHXU")("Clicked")
+end)
+
+local Section = Tab:NewSection("Youtube : KTollT")
+Section:NewButton("Copy Yt", "Credits", function()
+    setclipboard("https://www.youtube.com/channel/UC7Qd6nnNiat95JWeIH0pX5Q/videos")("Clicked")
+end)
